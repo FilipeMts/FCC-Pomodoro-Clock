@@ -177,7 +177,7 @@ const App = () => {
         </div>
         </div>
         <div className="code">
-        <a href="" target="_blank" rel="noopener noreferrer">code is available here</a>
+        <a href="https://github.com/FilipeMts/FCC-Pomodoro-Clock" target="_blank" rel="noopener noreferrer">code is available here</a>
         </div>    
       <audio id="beep" src={beep} ref={audioRef}/>
     </div>
