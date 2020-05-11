@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+$main-clr: #e1b382;
+$sec-clr: #c89666;
+$third-clr: #2d545e;
+$forth-clr: #12343b;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: $forth-clr;
+  font-family: "Balsamiq Sans", sans-serif;
+  color: #ffffff;
+
+  .clock-container {
+    margin: auto;
+    width: 90%;    
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: $third-clr;
+    border: 2px solid $main-clr;
+
+    .controls {
+      #start-stop {
+        color: red;
+      }
+
+      button {
+        width: 2.5em;
+        height: 2.5em;
+      }
+    }
+      
+    .break-session-wrapper {
+      display: flex;
+      justify-content: space-around;
+
+      #break-label, #session-label {
+        width: 50%;
+        
+        #break-length, #session-length {
+          display: flex;
+          align-items: center;
+        }
+        
+        div:nth-child(2) {
+          display: flex;
+          justify-content: center;
+        }
+
+        p {
+          font-size: .85em;
+        }
+        
+        button {
+          width: 1.5em;
+          height: 1.5em;    
+        }
+      }  
+    }
+
+    button {
+      margin: .5em;   
+      background: $main-clr;   
+      border:.1em solid $forth-clr;
+      cursor: pointer;
+    }
+  }
+  .code {
+    a {
+      text-decoration: none;
+      font-size: .75em;
+      color: $sec-clr;
+    }
+  }
+}
+
+@media (min-width: 460px) {
+  .App {
+    .clock-container {
+      width: 25em;
+    }
+  }
+}
