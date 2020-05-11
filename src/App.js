@@ -161,17 +161,17 @@ const App = () => {
           <div id='break-label'>
             <div><p>Break Time</p></div>
             <div>
-              <button id='break-increment' value='+' onClick={e => incDecClock(e, clock.breakDuration, 'Break')}><i className="fas fa-plus"></i></button>
+              <button id='break-increment' value='+' onClick={e => incDecClock(e, clock.breakDuration, 'Break')}>+</button>
               <div id='break-length'>{clock.breakDuration}</div>
-              <button id='break-decrement' value='-' onClick={e => incDecClock(e, clock.breakDuration, 'Break')}><i className="fas fa-minus"></i></button>            
+              <button id='break-decrement' value='-' onClick={e => incDecClock(e, clock.breakDuration, 'Break')}>-</button>            
             </div>            
           </div>
           <div id='session-label'>
             <div><p>Session Time</p></div>
             <div>
-              <button id='session-increment' value='+' onClick={e => incDecClock(e, clock.sessionDuration,'Session')}><i className="fas fa-plus"></i></button>
+              <button id='session-increment' value='+' onClick={e => incDecClock(e, clock.sessionDuration,'Session')}>+</button>
               <div id='session-length'>{clock.sessionDuration}</div>
-              <button id='session-decrement' value='-' onClick={e => incDecClock(e, clock.sessionDuration, 'Session')}><i className="fas fa-minus"></i></button>            
+              <button id='session-decrement' value='-' onClick={e => incDecClock(e, clock.sessionDuration, 'Session')}>-</button>            
             </div>
           </div>
         </div>
